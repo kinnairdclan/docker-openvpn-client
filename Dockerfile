@@ -12,7 +12,7 @@ RUN apk add --no-cache \
 
 COPY data/ /data/
 
-ENV KILL_SWITCH=iptables
+ENV KILL_SWITCH=nftables
 ENV USE_VPN_DNS=on
 ENV VPN_LOG_LEVEL=3
 
