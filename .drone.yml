@@ -11,4 +11,4 @@ steps:
         from_secret: dockerhub_username
       password:
         from_secret: dockerhub_access_token
-      context: ./build/
+      context: build/
