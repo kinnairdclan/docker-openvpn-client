@@ -1,7 +1,5 @@
-kind: pipeline
-name: default
 steps:
-  - name: docker
+  - name: build
     image: plugins/docker
     settings:
       repo: kinnairdclan/docker-openvpn-client
@@ -11,4 +9,5 @@ steps:
         from_secret: dockerhub_username
       password:
         from_secret: dockerhub_access_token
-      context: ./build/
+      context: build/
+      dockerfile: build/Dockerfile
